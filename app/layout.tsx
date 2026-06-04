@@ -1,8 +1,8 @@
-import { Geist, Geist_Mono, Noto_Sans } from "next/font/google"
-
+import { Geist_Mono, Noto_Sans } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { cn } from "@/lib/utils";
+import type { Metadata } from "next";
 
 const notoSans = Noto_Sans({subsets:['latin'],variable:'--font-sans'})
 
@@ -10,6 +10,35 @@ const fontMono = Geist_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 })
+
+export const metadata: Metadata = {
+  title: 'ETH.vn',
+  description: 'Bách khoa toàn thư mở về Ethereum.',
+  metadataBase: new URL('https://www.eth.vn'),
+  openGraph: {
+    title: 'ETH.vn',
+    description: 'Bách khoa toàn thư mở về Ethereum.',
+    url: 'https://www.eth.vn',
+    siteName: 'ETH.vn',
+    images: [
+      {
+        url: '/ethvn-tbn.png',
+        width: 1200,
+        height: 630,
+        alt: 'og-image',
+      },
+    ],
+    locale: 'vi_VN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ETH.vn',
+    description: 'Bách khoa toàn thư mở về Ethereum.',
+    creator: '@ethdotvn',
+    images: ['/ethvn-tbn.png'],
+  },
+}
 
 export default function RootLayout({
   children,
