@@ -12,14 +12,14 @@ const fontMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'ETH.vn',
+  title: 'ETH Việt Nam',
   description: 'Bách khoa toàn thư mở về Ethereum.',
   metadataBase: new URL('https://www.eth.vn'),
   openGraph: {
-    title: 'ETH.vn',
+    title: 'ETH Việt Nam',
     description: 'Bách khoa toàn thư mở về Ethereum.',
     url: 'https://www.eth.vn',
-    siteName: 'ETH.vn',
+    siteName: 'ETH Việt Nam',
     images: [
       {
         url: '/ethvn-tbn.png',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ETH.vn',
+    title: 'ETH Việt Nam',
     description: 'Bách khoa toàn thư mở về Ethereum.',
     creator: '@ethdotvn',
     images: ['/ethvn-tbn.png'],
