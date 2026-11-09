@@ -23,10 +23,10 @@ export const metadata: Metadata = {
     siteName: 'ETH Việt Nam',
     images: [
       {
-        url: '/ethvn-tbn.png',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'og-image',
+        alt: 'ETH Việt Nam',
       },
     ],
     locale: 'vi_VN',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'ETH Việt Nam',
     description: 'Bách khoa toàn thư mở về Ethereum.',
     creator: '@ethdotvn',
-    images: ['/ethvn-tbn.png'],
+    images: ['/og-image.png'],
   },
 }
 
